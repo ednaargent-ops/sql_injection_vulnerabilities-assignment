@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Parts Search</title>
+</head>
+
+<body>
+    <h1>Search Parts</h1>
+
+    <form method="GET" action="/api/parts/">
+        <label for="name">Part name</label>
+
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Example: Engine Oil"
+            required
+            maxlength="50"
+            pattern="[A-Za-z0-9 ]+"
+            title="Use letters, numbers and spaces only"
+        >
+
+        <button type="submit">
+            Search
+        </button>
+    </form>
+</body>
+</html>
